@@ -72,15 +72,17 @@ The current implementation can be considered beta quality.
 </p>
 <b>What is working:</b>		
 <ul>
-<li> Launching an instance of Chrome for debugging
-<li> Setting breakpoints in Java, including in JAR libraries
+<li> Launching a new instance of Chrome for debugging
+<li> Connecting to a running Chrome instance for debugging
+<li> Debugging code running in the Chrome for Mobile browser on Android 
+(including port forwarding a website running locally on your PC to Chrome for Mobile!)
+<li> Setting breakpoints in Java, including setting breakpoint in code coming from JAR libraries
 <li> Opening the Java (or other source language) source files instead of the obfuscated JavaScript
 </ul>
 <b>What is mostly working:</b>
 <ul>
 <li> Deobfuscating the stacktrace. Works but does not look 100% like e.g. the JDT Debugger stacktrace. 
 For example, the methods are not deobfuscated to their Java equivalents
-<li> Connecting to a running Chrome instance; works but is well hidden. Go in Eclipse Preferences and assign a shortcut to the Chrome Remote Connection Dialog
 </ul>
 <b>Future work:</b>
 <ul>
