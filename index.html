@@ -24,6 +24,23 @@
 <div class="inner clearfix">
 <section id="main-content">
 
+<h1>News</h1>
+<h2>SDBG 2 Released</h2>
+<p>
+    SDBG has been released in Version 2 with the following enhancements
+    <ul>
+        <li>Fixed Runtime Error on JAVA 11. This allows newer Eclipse Versions to be used.
+        <li>Added support for Microsoft Edge
+        <li>Added support for Chromium
+        <li>Added support for Firefox
+        <li>Allow to switch between browsers at runtime and per launch configuration
+        <li>Renamed "Launch Chrome" to "Launch Browser"
+        <li>Added Property "-Dbrowser.location" and Environment Variable "BROWSER_LOCATION" to specify
+        the Path to the Browser Executable. 
+        <li>Updated some dependencies
+    </ul>
+</p>
+
 <h1>Installation</h1>
 <p>
 Install using the SDBG <a target="_blank" href="http://sdbg.github.io/p2">Plugin Update Site</a>
@@ -35,31 +52,45 @@ Install using the SDBG <a target="_blank" href="http://sdbg.github.io/p2beta">Pl
 (<a target="_blank" href="http://sdbg.github.io/p2beta">http://sdbg.github.io/p2beta</a>).
 </p> 
 
-<h1>Community</h1>
+<h1>Usage</h1>
+<ul>
+    <li>If you're migrating from SDBG 1 you may need to change or remove the "-Dchrome.location" Property in order to be able to use Firefox. If one of the System Properties or Environment Variables is used, it <b>must match</b> the browser in the launch configurations "Browser search order"
+    <li>The used browser can be changed in the Launch Configuration by changing the "Browser search order". The first Browser  in the given order that is found will be used.
+    <li>If your Browser is not found, the easiest way to add it's path to the PATH Environment Variable.
+    <li>For Firefox you will need to fix the Impl class by super-sourcing it, on <br>all GWT Versions <= 2.10 until <a href="https://github.com/gwtproject/gwt/issues/9787">GWT Bug #9787</a> has been fixed. Proposed Bugfix is <a href="https://github.com/gwtproject/gwt/pull/9800"> here</a>
+</ul>
+
+<h1>Status</h1>
 <p>
-Any comments, bugs or issues should be directed <!-- to the SDBG 
-<a target="_blank" href="https://groups.google.com/d/forum/sdbg">Forums</a> (Google Groups),<br>
-or --> to the SDBG <a target="_blank" href="https://github.com/sdbg/sdbg/issues">Issues</a> list at GitHub.
+    SDBG supports Chromium, Edge, Chrome <b>and</b> Firefox
+</p>
+<p>
+    Some limitations:
+    <ul>
+    <li>Firefox support is new. Sometimes it needs more then 1 attempt to connect (try reloading the page or restarting firefox). Variable View currently only shows local variables. This will be fixed in 2.1.
+    <li>GWT Debugging with Firefox currently needs overriding a GWT class. See Usage Infos.
+    <li>(<a target="_blank" href="https://github.com/sdbg/sdbg/issues/52">Issue #52</a>) Support conditional breakpoints.
+    </ul>
+    For more information check the SDBG <a target="_blank" href="https://github.com/sdbg/sdbg/issues">Issues</a> list 
+    and the <a target="_blank" href="https://github.com/sdbg/sdbg/blob/master/README.md">README.md</a> file. 
 </p>
 
-<h2>Status</h2>
-<p>SDBG is roughly on-par with the Chrome DevTools JavaScript debugger.</p>
-  <p>The Beta Version now supports Chromium, Edge, Chrome <b>and</b> Firefox</p>
-Some limitations:
-<ul>
-<li>(<a target="_blank" href="https://github.com/sdbg/sdbg/issues/6">Issue  #6</a>) Variables are displayed in JavaScript (shared with Chrome DevTools).
-<li>(<a target="_blank" href="https://github.com/sdbg/sdbg/issues/52">Issue #52</a>) Support conditional breakpoints.
-</ul>
-For more information check the SDBG <a target="_blank" href="https://github.com/sdbg/sdbg/issues">Issues</a> list 
-and the <a target="_blank" href="https://github.com/sdbg/sdbg/blob/master/README.md">README.md</a> file. 
+<h1>Community</h1>
+<p>
+    Any comments, bugs or issues should be directed <!-- to the SDBG 
+    <a target="_blank" href="https://groups.google.com/d/forum/sdbg">Forums</a> (Google Groups),<br>
+    or --> to the SDBG <a target="_blank" href="https://github.com/sdbg/sdbg/issues">Issues</a> list at GitHub.
+</p>
 </section>
+
 
 <aside id="sidebar">
   <a target="_blank" href="http://sdbg.github.io/p2">Plugin Update Site</a><br><br>
  <!--<a target="_blank" href="https://groups.google.com/forum/#!forum/sdbg">Forums</a><br><br>-->
   <a target="_blank" href="https://github.com/sdbg/sdbg/issues">Issues</a><br><br>        	
 </aside>
-</div>
-</div>
+
+
+
 </body>
 </html>
