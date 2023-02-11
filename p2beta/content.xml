@@ -57,7 +57,7 @@
                 <provided name="com.github.sdbg.feature" namespace="org.eclipse.update.feature" version="2.0.0.202302111241"/>
                 <provided name="feature" namespace="org.eclipse.equinox.p2.eclipse.type" version="1.0.0"/>
             </provides>
-            <update id="com.github.sdbg.feature" range="[0.0.0,2.0.0.202302111241)"/>
+            <update id="com.github.sdbg.feature" range="[0.0.0,2.0.0.202302111241)" severity="0"/>
             <artifacts>
                 <artifact classifier="org.eclipse.update.feature" id="com.github.sdbg.feature" version="2.0.0.202302111241"/>
             </artifacts>
