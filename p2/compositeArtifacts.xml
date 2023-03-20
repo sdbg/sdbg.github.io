@@ -7,8 +7,8 @@
     <property name='p2.timestamp' value='1665755219001'/>
   </properties>
   <children size='2'>
-    <child location='https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.0.0/'/>
+    <child location='https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.0.0'/>
     <child location='https://sdbg.github.io/p2/sdbg'/>
-    <child location='https://keeitsi.com/software/eclipse-plugins/gwt-sdk-plugins/'/>
+    <child location='https://keeitsi.com/software/eclipse-plugins/gwt-sdk-plugins'/>
   </children>
 </repository>
