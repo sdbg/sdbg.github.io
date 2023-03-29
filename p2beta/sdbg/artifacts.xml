@@ -8,9 +8,9 @@
         <rule filter="(&amp; (classifier=org.eclipse.update.feature))" output="${repoUrl}/features/${id}_${version}.jar"/>
     </mappings>
     <artifacts>
-        <artifact classifier="osgi.bundle" id="com.github.sdbg.debug.core" version="2.1.0.202303101717"/>
-        <artifact classifier="osgi.bundle" id="com.github.sdbg.debug.ui" version="2.1.0.202303101717"/>
-        <artifact classifier="osgi.bundle" id="com.github.sdbg.integration.jdt" version="2.1.0.202303101717"/>
-        <artifact classifier="org.eclipse.update.feature" id="com.github.sdbg.feature" version="2.1.0.202303101717"/>
+        <artifact classifier="osgi.bundle" id="com.github.sdbg.debug.core" version="2.1.0.202303291152"/>
+        <artifact classifier="osgi.bundle" id="com.github.sdbg.debug.ui" version="2.1.0.202303291152"/>
+        <artifact classifier="osgi.bundle" id="com.github.sdbg.integration.jdt" version="2.1.0.202303291152"/>
+        <artifact classifier="org.eclipse.update.feature" id="com.github.sdbg.feature" version="2.1.0.202303291152"/>
     </artifacts>
 </repository>
