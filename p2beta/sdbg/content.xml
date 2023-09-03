@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <repository name="repo" type="org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository" version="1">
     <units>
-        <unit id="com.github.sdbg.feature.feature.group" version="2.2.0.202309011811">
+        <unit id="com.github.sdbg.feature.feature.group" version="2.2.0.202309031418">
             <provides>
-                <provided name="com.github.sdbg.feature.feature.group" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309011811"/>
+                <provided name="com.github.sdbg.feature.feature.group" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309031418"/>
             </provides>
             <properties>
                 <property name="org.eclipse.equinox.p2.name" value="Source Map Editor Feature"/>
@@ -14,63 +14,63 @@
                 <license uri="https://www.eclipse.org/legal/epl-v10.html" url="https://www.eclipse.org/legal/epl-v10.html">This project is released under the Eclipse Public License v1.0. For Details look here: https://www.eclipse.org/legal/epl-v10.html</license>
             </licenses>
             <requires>
-                <required name="com.github.sdbg.debug.core" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309011811"/>
-                <required name="com.github.sdbg.debug.ui" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309011811"/>
-                <required name="com.github.sdbg.integration.jdt" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309011811"/>
-                <required name="com.github.sdbg.feature" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309011811"/>
+                <required name="com.github.sdbg.debug.core" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309031418"/>
+                <required name="com.github.sdbg.debug.ui" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309031418"/>
+                <required name="com.github.sdbg.integration.jdt" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309031418"/>
+                <required name="com.github.sdbg.feature" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309031418"/>
             </requires>
         </unit>
-        <unit id="com.github.sdbg.debug.core" version="2.2.0.202309011811">
+        <unit id="com.github.sdbg.debug.core" version="2.2.0.202309031418">
             <provides>
-                <provided name="com.github.sdbg.debug.core" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309011811"/>
-                <provided name="com.github.sdbg.debug.core" namespace="osgi.bundle" version="2.2.0.202309011811"/>
+                <provided name="com.github.sdbg.debug.core" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309031418"/>
+                <provided name="com.github.sdbg.debug.core" namespace="osgi.bundle" version="2.2.0.202309031418"/>
                 <provided name="bundle" namespace="org.eclipse.equinox.p2.eclipse.type" version="1.0.0"/>
             </provides>
-            <update id="com.github.sdbg.debug.core" range="[0.0.0,2.2.0.202309011811)" severity="0"/>
+            <update id="com.github.sdbg.debug.core" range="[0.0.0,2.2.0.202309031418)" severity="0"/>
             <artifacts>
-                <artifact classifier="osgi.bundle" id="com.github.sdbg.debug.core" version="2.2.0.202309011811"/>
+                <artifact classifier="osgi.bundle" id="com.github.sdbg.debug.core" version="2.2.0.202309031418"/>
             </artifacts>
             <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0"/>
         </unit>
-        <unit id="com.github.sdbg.debug.ui" version="2.2.0.202309011811">
+        <unit id="com.github.sdbg.debug.ui" version="2.2.0.202309031418">
             <provides>
-                <provided name="com.github.sdbg.debug.ui" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309011811"/>
-                <provided name="com.github.sdbg.debug.ui" namespace="osgi.bundle" version="2.2.0.202309011811"/>
+                <provided name="com.github.sdbg.debug.ui" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309031418"/>
+                <provided name="com.github.sdbg.debug.ui" namespace="osgi.bundle" version="2.2.0.202309031418"/>
                 <provided name="bundle" namespace="org.eclipse.equinox.p2.eclipse.type" version="1.0.0"/>
             </provides>
-            <update id="com.github.sdbg.debug.ui" range="[0.0.0,2.2.0.202309011811)" severity="0"/>
+            <update id="com.github.sdbg.debug.ui" range="[0.0.0,2.2.0.202309031418)" severity="0"/>
             <artifacts>
-                <artifact classifier="osgi.bundle" id="com.github.sdbg.debug.ui" version="2.2.0.202309011811"/>
+                <artifact classifier="osgi.bundle" id="com.github.sdbg.debug.ui" version="2.2.0.202309031418"/>
             </artifacts>
             <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0"/>
         </unit>
-        <unit id="com.github.sdbg.integration.jdt" version="2.2.0.202309011811">
+        <unit id="com.github.sdbg.integration.jdt" version="2.2.0.202309031418">
             <provides>
-                <provided name="com.github.sdbg.integration.jdt" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309011811"/>
-                <provided name="com.github.sdbg.integration.jdt" namespace="osgi.bundle" version="2.2.0.202309011811"/>
+                <provided name="com.github.sdbg.integration.jdt" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309031418"/>
+                <provided name="com.github.sdbg.integration.jdt" namespace="osgi.bundle" version="2.2.0.202309031418"/>
                 <provided name="bundle" namespace="org.eclipse.equinox.p2.eclipse.type" version="1.0.0"/>
             </provides>
-            <update id="com.github.sdbg.integration.jdt" range="[0.0.0,2.2.0.202309011811)" severity="0"/>
+            <update id="com.github.sdbg.integration.jdt" range="[0.0.0,2.2.0.202309031418)" severity="0"/>
             <artifacts>
-                <artifact classifier="osgi.bundle" id="com.github.sdbg.integration.jdt" version="2.2.0.202309011811"/>
+                <artifact classifier="osgi.bundle" id="com.github.sdbg.integration.jdt" version="2.2.0.202309031418"/>
             </artifacts>
             <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0"/>
         </unit>
-        <unit id="com.github.sdbg.feature" version="2.2.0.202309011811">
+        <unit id="com.github.sdbg.feature" version="2.2.0.202309031418">
             <provides>
-                <provided name="com.github.sdbg.feature" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309011811"/>
-                <provided name="com.github.sdbg.feature" namespace="org.eclipse.update.feature" version="2.2.0.202309011811"/>
+                <provided name="com.github.sdbg.feature" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309031418"/>
+                <provided name="com.github.sdbg.feature" namespace="org.eclipse.update.feature" version="2.2.0.202309031418"/>
                 <provided name="feature" namespace="org.eclipse.equinox.p2.eclipse.type" version="1.0.0"/>
             </provides>
-            <update id="com.github.sdbg.feature" range="[0.0.0,2.2.0.202309011811)" severity="0"/>
+            <update id="com.github.sdbg.feature" range="[0.0.0,2.2.0.202309031418)" severity="0"/>
             <artifacts>
-                <artifact classifier="org.eclipse.update.feature" id="com.github.sdbg.feature" version="2.2.0.202309011811"/>
+                <artifact classifier="org.eclipse.update.feature" id="com.github.sdbg.feature" version="2.2.0.202309031418"/>
             </artifacts>
             <touchpoint id="org.eclipse.equinox.p2.osgi" version="1.0.0"/>
         </unit>
-        <unit id="com.github.sdbg" version="2.2.0.202309011811">
+        <unit id="com.github.sdbg" version="2.2.0.202309031418">
             <provides>
-                <provided name="com.github.sdbg" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309011811"/>
+                <provided name="com.github.sdbg" namespace="org.eclipse.equinox.p2.iu" version="2.2.0.202309031418"/>
             </provides>
             <properties>
                 <property name="org.eclipse.equinox.p2.type.category" value="true"/>
@@ -78,7 +78,7 @@
                 <property name="org.eclipse.equinox.p2.description" value="An Eclipse plugin for debugging web applications compiled to JavaScript which have sourcemap support."/>
             </properties>
             <requires>
-                <required name="com.github.sdbg.feature.feature.group" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309011811"/>
+                <required name="com.github.sdbg.feature.feature.group" namespace="org.eclipse.equinox.p2.iu" range="2.2.0.202309031418"/>
             </requires>
         </unit>
     </units>
