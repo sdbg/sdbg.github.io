@@ -25,6 +25,14 @@
 <section id="main-content">
 
 <h1>News</h1>
+<h2>19.10.2023 SDBG 2.2 Released</h2>
+<p>
+    SDBG has been released in Version 2.2 with the following enhancements
+    <ul>
+        <li>Better Firefox support
+        <li>Fixed automatic Chrome/Chromium detection on OSX
+    </ul>
+</p>
 <h2>10.03.2023 SDBG 2.1 Released</h2>
 <p>
     SDBG has been released in Version 2.1 with the following enhancements
@@ -71,7 +79,7 @@ Install using the SDBG <a target="_blank" href="https://sdbg.github.io/p2beta">P
     <li>If you're migrating from SDBG 1 you may need to change or remove the "-Dchrome.location" Property in order to be able to use Firefox. If one of the System Properties or Environment Variables is used, it <b>must match</b> the browser in the launch configurations "Browser search order"
     <li>The used browser can be changed in the Launch Configuration by changing the "Browser search order". The first Browser  in the given order that is found will be used.
     <li>If your Browser is not found, the easiest way to add it's path to the PATH Environment Variable.
-    <li>For Firefox you will need to fix the Impl class by super-sourcing it, on <br>all GWT Versions <= 2.10 until <a href="https://github.com/gwtproject/gwt/issues/9787">GWT Bug #9787</a> has been fixed. Proposed Bugfix is <a href="https://github.com/gwtproject/gwt/pull/9800"> here</a>
+    <li><del>For Firefox you will need to fix the Impl class by super-sourcing it, on <br>all GWT Versions <= 2.10 until <a href="https://github.com/gwtproject/gwt/issues/9787">GWT Bug #9787</a> has been fixed. Proposed Bugfix is <a href="https://github.com/gwtproject/gwt/pull/9800"> here</a></del> No longer needed in SDBG 2.2
 </ul>
 
 <h1>Status</h1>
@@ -81,8 +89,7 @@ Install using the SDBG <a target="_blank" href="https://sdbg.github.io/p2beta">P
 <p>
     Some limitations:
     <ul>
-    <li>Firefox support is new. Sometimes it needs more then 1 attempt to connect (try reloading the page or restarting firefox). Variable View currently only shows local variables. This will be fixed in 2.1.
-    <li>GWT Debugging with Firefox currently needs overriding a GWT class. See Usage Infos.
+    <li>Firefox support is new. Sometimes it needs more then 1 attempt to connect (try reloading the page or restarting firefox). 
     <li>(<a target="_blank" href="https://github.com/sdbg/sdbg/issues/52">Issue #52</a>) Support conditional breakpoints.
     </ul>
     For more information check the SDBG <a target="_blank" href="https://github.com/sdbg/sdbg/issues">Issues</a> list 
