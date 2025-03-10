@@ -7,8 +7,10 @@
     <property name='p2.timestamp' value='1665755219001'/>
   </properties>
   <children size='3'>
-    <child location='https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/4.0.0'/>
+    <child location='https://plugins.gwtproject.org/eclipse/gwt-eclipse-plugin/latest'/>
     <child location='https://sdbg.github.io/p2/sdbg'/>
-    <child location='https://keeitsi.com/software/eclipse-plugins/gwt-sdk-plugins'/>
+    <child location='https://plugins.gwtproject.org/eclipse/gwt-sdk-plugins/2.10.1'/>
+    <child location='https://plugins.gwtproject.org/eclipse/gwt-sdk-plugins/2.11.0'/>
+    <child location='https://plugins.gwtproject.org/eclipse/gwt-sdk-plugins/2.12.2'/>
   </children>
 </repository>
